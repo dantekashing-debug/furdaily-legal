@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurDaily — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #333; background: #fafafa; line-height: 1.7; }
+        .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; background: #fff; min-height: 100vh; }
+        h1 { font-size: 28px; margin-bottom: 4px; color: #1a1a1a; }
+        .updated { font-size: 13px; color: #999; margin-bottom: 32px; }
+        h2 { font-size: 18px; margin-top: 32px; margin-bottom: 12px; color: #1a1a1a; }
+        h3 { font-size: 15px; margin-top: 16px; margin-bottom: 8px; color: #333; }
+        p, li { font-size: 15px; color: #444; margin-bottom: 10px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 6px; }
+        .contact-box { background: #fff7f0; border: 1px solid #ffe0c7; border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+        .contact-box p { margin-bottom: 6px; }
+        .contact-box a { font-weight: 600; font-size: 16px; }
+        .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #eee; font-size: 13px; color: #999; text-align: center; }
+        .footer a { margin: 0 8px; }
+        a { color: #E8915A; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .lang-switch { text-align: right; margin-bottom: 16px; font-size: 14px; }
+        .lang-switch a { padding: 4px 12px; border: 1px solid #ddd; border-radius: 4px; margin-left: 8px; }
+        .lang-switch a.active { background: #E8915A; color: #fff; border-color: #E8915A; }
+        .section-cn { display: none; }
+    </style>
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.section-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+            document.querySelectorAll('.section-cn').forEach(el => el.style.display = lang === 'cn' ? 'block' : 'none');
+            document.querySelectorAll('.lang-switch a').forEach(el => el.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="lang-switch">
+        <a id="lang-en" class="active" href="javascript:switchLang('en')">English</a>
+        <a id="lang-cn" href="javascript:switchLang('cn')">中文</a>
+    </div>
+
+    <!-- ==================== ENGLISH ==================== -->
+    <div class="section-en">
+    <h1>FurDaily Support</h1>
+    <p class="updated">We're here to help</p>
+
+    <p>Thank you for using FurDaily — your all-in-one pet care and community app. If you need assistance, have a question, or want to share feedback, please reach out to us using the contact information below.</p>
+
+    <div class="contact-box">
+        <p><strong>Email Support:</strong></p>
+        <p><a href="mailto:dantekashing@gmail.com">dantekashing@gmail.com</a></p>
+        <p style="margin-top:10px; font-size:13px; color:#999;">We respond to most inquiries within 24–48 hours.</p>
+    </div>
+
+    <h2>Common Questions</h2>
+
+    <h3>How do I create a pet profile?</h3>
+    <p>Open the app, go to the "Profile" tab, tap "Pet Profile," then tap the "+" button to add your pet. You can add multiple pets and switch between them anytime.</p>
+
+    <h3>How do I report a lost pet?</h3>
+    <p>Go to the "Nearby" tab, tap the "+" button at the bottom center, and choose "Lost Pet." Fill in your pet's details, last-seen location, and upload photos. Nearby users will be alerted.</p>
+
+    <h3>How do adoption listings work?</h3>
+    <p>All adoption listings are user-to-user. FurDaily does not handle any transactions, deposits, or funds. Any deposit amount shown is a reference value stated by the posting user — all payment arrangements are strictly private and happen offline, in person, after the pet is delivered.</p>
+
+    <h3>How do I delete my account?</h3>
+    <p>Go to Settings → Account → "Delete Account and Data." Your account enters a 7-day cooling-off period. If you do not log back in during that time, all your data is permanently removed.</p>
+
+    <h3>How do I block or report a user?</h3>
+    <p>Tap any user's avatar to open their profile, then tap the "⋯" menu to block or report. You can manage your blocked list in Settings → Privacy → Blocked Users.</p>
+
+    <h3>Will my location be shared publicly?</h3>
+    <p>No. FurDaily only requests "When In Use" location permission and applies a 500-meter random offset to any coordinates displayed to other users. Your precise location is never shared.</p>
+
+    <h3>I found a bug or have a feature request</h3>
+    <p>Please email us at <a href="mailto:dantekashing@gmail.com">dantekashing@gmail.com</a> with a clear description. Screenshots are very helpful. We read every message.</p>
+
+    <h2>Safety &amp; Fraud Prevention</h2>
+    <p>If you are arranging an adoption or responding to a lost pet reward, please keep yourself safe:</p>
+    <ul>
+        <li>Always meet in person in a public place.</li>
+        <li>Only pay any deposit or reward <strong>after</strong> the pet is physically delivered to you.</li>
+        <li>Verify the pet's identity through unique features (markings, temperament, response to commands).</li>
+        <li>Anyone demanding upfront payment or asking you to wire funds is very likely a scammer — report them immediately.</li>
+    </ul>
+
+    <div class="footer">
+        <a href="privacy.html">Privacy Policy</a> ·
+        <a href="terms.html">Terms of Use</a> ·
+        <a href="mailto:dantekashing@gmail.com">Contact Us</a>
+        <p style="margin-top:12px;">© 2026 FurDaily. All rights reserved.</p>
+    </div>
+    </div>
+
+    <!-- ==================== 中文 ==================== -->
+    <div class="section-cn">
+    <h1>FurDaily 技术支持</h1>
+    <p class="updated">我们随时为您服务</p>
+
+    <p>感谢您使用 FurDaily —— 您的一站式宠物养护与社区 App。如果您遇到问题、有疑问，或想提出建议，欢迎通过下方联系方式与我们联络。</p>
+
+    <div class="contact-box">
+        <p><strong>邮箱支持：</strong></p>
+        <p><a href="mailto:dantekashing@gmail.com">dantekashing@gmail.com</a></p>
+        <p style="margin-top:10px; font-size:13px; color:#999;">我们会在 24–48 小时内回复大多数咨询。</p>
+    </div>
+
+    <h2>常见问题</h2>
+
+    <h3>如何创建宠物档案？</h3>
+    <p>打开 App，进入「我的」标签页，点击「宠物档案」，然后点击「+」按钮添加宠物。您可以添加多只宠物并随时切换。</p>
+
+    <h3>如何发布走失宠物报告？</h3>
+    <p>进入「附近」标签页，点击底部中央的「+」按钮，选择「走失宠物」，填写宠物信息、最后出现位置并上传照片。附近的用户会收到提示。</p>
+
+    <h3>送养帖是怎么运作的？</h3>
+    <p>所有送养信息均为用户与用户之间的私下约定。FurDaily 不参与任何资金、押金或款项的处理。信息中标注的押金金额仅为发布者单方声明的参考数值，所有付款安排均为双方私下进行，建议在宠物当面交付后再支付。</p>
+
+    <h3>如何删除我的账号？</h3>
+    <p>前往「设置 → 账号 → 删除账号和数据」。您的账号将进入 7 天冷静期，期间不重新登录，届时所有数据将被永久清除。</p>
+
+    <h3>如何屏蔽或举报用户？</h3>
+    <p>点击任意用户头像进入其主页，点击右上角「⋯」菜单即可屏蔽或举报。屏蔽列表可在「设置 → 隐私 → 屏蔽列表」中管理。</p>
+
+    <h3>我的位置会被公开吗？</h3>
+    <p>不会。FurDaily 只申请「使用期间」的定位权限，且任何对外展示的坐标都会加入 500 米随机偏移。您的精确位置永远不会被分享。</p>
+
+    <h3>发现 Bug 或有功能建议</h3>
+    <p>请发邮件至 <a href="mailto:dantekashing@gmail.com">dantekashing@gmail.com</a>，清晰描述问题，附上截图最好。我们会阅读每一封来信。</p>
+
+    <h2>安全与防诈骗</h2>
+    <p>在处理送养或答谢酬金事宜时，请务必保护自己：</p>
+    <ul>
+        <li>始终在公共场所当面交接。</li>
+        <li>押金或酬金只在宠物实际交付到您手上<strong>之后</strong>才支付。</li>
+        <li>通过宠物独有特征（疤痕、体态、对指令的反应等）确认身份。</li>
+        <li>任何要求预先打款或转账的，极大概率是骗子，请立即举报。</li>
+    </ul>
+
+    <div class="footer">
+        <a href="privacy.html">隐私政策</a> ·
+        <a href="terms.html">用户协议</a> ·
+        <a href="mailto:dantekashing@gmail.com">联系我们</a>
+        <p style="margin-top:12px;">© 2026 FurDaily 版权所有</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>
